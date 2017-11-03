@@ -1,33 +1,133 @@
-<!DOCTYPE HTML>
-<html>
-<body><h1><center>DEEBAVIGNESH SUBASH</h1></center>
-  <br /><center><h3>Design Engineer Mechanical</h3></center>
-
-<!-- navbar -->
-
-<div class="topnav" id="myTopnav">
-  <a href="../index.html">Home</a>
-  <a href="model/model.html">Model Library</a>
-  <a href="#contact">Contact</a>
-  <a href="about/about.html">About me</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Dv</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../index.html">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron text-center">
+  <h1>Deebavignesh</h1>
+  <p>My work is done in a fashion that others can build on top of it!</p> 
 </div>
- catogories:
- *parts
- *fasteners
- *mechanism
- *bio-inspired
- *anatomical
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Concept design</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>reverse engineering</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>documentation</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
 
- an image frame with the part image and whne clicked takes to cad viewer.
- 
 
-<!--iframe for cad models -->
-  <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/4c7ceb34237242f8ae8976659611ecd4/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+<!-- SUBTAB -->
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Parts</a></li>
+  <li><a data-toggle="tab" href="#menu1">Standard parts</a></li>
+  <li><a data-toggle="tab" href="#menu2">Assemblies</a></li>
+</ul>
+<!-- SUBTAB 1 -->
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h3>Assemblies</h3>
+      <div class="alert alert-success">
+      <a href="#">Assemblies <span class="badge">5</span></a><br>
+      </div>
+  </div>
+  <!-- SUBTAB 2 -->
 
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/4c7ceb34237242f8ae8976659611ecd4?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sleve Coupling</a>
-    by <a href="https://sketchfab.com/dv9631?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">dv9631</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+  <div id="menu1" class="tab-pane fade">
+    <h3>Parts</h3>
+    <div class="alert alert-success">
+    <a href="#">Parts <span class="badge">10</span></a><br>
+    </div>
+  </div>
+  <!-- SUBTAB 3 -->
+  <div id="menu2" class="tab-pane fade">
+    <div class="alert alert-success">
+    <a href="#">Organic modeling <span class="badge">2</span></a>
+    </div>
+  </div>
+</div>
 
+<!-- FILTER SEARCH -->
+<div class="container">
+  <h2>PARTS LIST Filterable Table</h2>
+  <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@mail.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@greatstuff.com</td>
+      </tr>
+      <tr>
+        <td>Anja</td>
+        <td>Ravendale</td>
+        <td>a_r@test.com</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
 </html>
-

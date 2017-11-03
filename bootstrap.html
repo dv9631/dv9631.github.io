@@ -24,7 +24,7 @@
 </nav>
 <div class="jumbotron text-center">
   <h1>Deebavignesh</h1>
-  <p>My work is done in a fashion that 2others can build on top of it!</p> 
+  <p>My work is done in a fashion that others can build on top of it!</p> 
 </div>
   
 <div class="container">
@@ -47,15 +47,13 @@
   </div>
 
 
-<div class="alert alert-success">
-<a href="#">Organic modeling <span class="badge">2</span></a>
-</div>
+<!-- SUBTAB -->
 <ul class="nav nav-tabs">
   <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
   <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
   <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
 </ul>
-
+<!-- SUBTAB 1 -->
 <div class="tab-content">
   <div id="home" class="tab-pane fade in active">
     <h3>Assemblies</h3>
@@ -63,19 +61,73 @@
       <a href="#">Assemblies <span class="badge">5</span></a><br>
       </div>
   </div>
+  <!-- SUBTAB 2 -->
+
   <div id="menu1" class="tab-pane fade">
     <h3>Parts</h3>
     <div class="alert alert-success">
     <a href="#">Parts <span class="badge">10</span></a><br>
     </div>
   </div>
+  <!-- SUBTAB 3 -->
   <div id="menu2" class="tab-pane fade">
-    <h3>Menu 2</h3>
-    <p>Some content in menu 2.</p>
+    <div class="alert alert-success">
+    <a href="#">Organic modeling <span class="badge">2</span></a>
+    </div>
   </div>
 </div>
 
+<!-- FILTER SEARCH -->
+<div class="container">
+  <h2>PARTS LIST Filterable Table</h2>
+  <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@mail.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@greatstuff.com</td>
+      </tr>
+      <tr>
+        <td>Anja</td>
+        <td>Ravendale</td>
+        <td>a_r@test.com</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+</div>
 
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 
 </body>
 </html>
