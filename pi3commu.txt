@@ -1,4 +1,5 @@
 hi, from pi repo added and cloned.
 git in web recieved this, is this cloned?
 yes saw in mac.mac says hi.
-
+linux had synced. commands to sync: sudo git pull sudo git status
+now pushing from pi3
