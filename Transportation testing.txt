@@ -1,0 +1,7 @@
+<h1>Transportation testing </h1>
+<h2> SCOPE </h2>
+<p> transportation of the finshed goods to the end user is a very critical aspect.
+a lot of parameters and interferecnces are involved in the transportation of the packages and it is a good methodology to figure these out in the initial stages of design to
+ freeze on the details of the packages fittness after recieved by the custommer</p>
+ <p> there are standards specifed for the transportation validations such as the <h3>ASTM D4169-16 </h3> which adress the detailed packaging testings</p>
+ <p> also the design of packaging for any goods must take into account the suggestions made by the standard on the same</p>
