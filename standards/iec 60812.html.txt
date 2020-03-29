@@ -1,0 +1,63 @@
+<title> analysis for system reliability - procedure for FMEA analysis</title>
+
+
+what is fmea?
+
+<p> a systematic procedure to analyse failure modes of a system their causes and effects on the system</p>
+
+when is the fmea to be done?
+
+<p> preferabilly early in the development cycle so that removal or mitigation is cost effective . can be innitiated as soon as the system is defined enough to be presented as a functional block diagram
+ takes place along with the design process</p>
+
+how to draw a functional block diagram?
+
+refer IEC 61078- analysis for system reliability - reliability block diagram method
+
+ what is the properties of the methodology?
+<ul>
+<li> bottom up methodology</li>
+<ul>suitabel for idividual failues</li>
+<ul>not suitable for dependant failures</li>
+<ul>not sutable for failures depending on sequence of events</li>
+</ul>
+
+what is individual failure?
+[unanswered/ find answer for this]
+
+what is dependant failure?
+[unanswered/ find answer for this]
+- use 61165 (markov analysis) or 61025 fault tree analysis
+
+
+what is a failure depending on sequence of events ?
+
+
+[unanswered/ find answer for this]
+
+what is the objective of the analysis?
+<ul>
+<li>identify failures having unwanted effects on system</li>
+<li><li>preclude</li></li>
+<li><li>user safety</li></li>
+<li><li>significantly degrade operation</li></li>
+<li> requirements satisfacetion</li>
+<li> improve system reliablilty</li>
+<li> maintenance schedule upon the risk </li>
+</ul>
+
+<hr>
+<h1>key terms:</h1>
+
+<ul>
+<li>ease of detection </li>
+<li>capability to be diagnosed</li>
+<li>testability</li>
+<li>repair</li>
+<li>maintainability</li>
+<li>logistics</li>
+
+
+
+
+

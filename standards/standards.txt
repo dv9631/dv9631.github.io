@@ -1,0 +1,8 @@
+standards:
+
+this will guide the reader to implement the standards in a step by step manner explain the detailed process to them to comply to it, and pprovide with formats necessary.
+
+whom to use:
+1) new implementors
+2) new learners
+
