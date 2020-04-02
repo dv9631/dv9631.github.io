@@ -350,6 +350,210 @@ where: </br>
 &lambda;<sub>j</sub> = failure rate of the component j</br>
 &alpha;<sub>i</sub> = probability that the item will have failure</br>
 &beta;<sub>i</sub> = condidtional probability  of the failure given</br>
+<li>deficiencies of this aproach are:implicit assumptions , guesses only</li>
+<li>publications dealing with reliability data</li>
+<li> C<sub>i</sub> = &lambda;<sub>i</sub>x t<sub>j</sub>
+<li> C<sub>i</sub> = &lambda;<sub>j</sub>x &alpha;<sub>i</sub>x&beta;<sub>i</sub>xt<sub>j</sub></li></br>
+where:</br>
+all same as above</br>
+t<sub>j</sub> = time of component operation during the entire predetermined time used</br>
+<li> criticality number for m failure modes</li></br>
+C<sub>j</sub>= (<sup>m</sup>&Sigma;<sub>i=1</sub>)x &lambda;<sub>j</sub>x&alpha;<sub>i</sub>x&beta;<sub>i</sub>xt<sub>j</sub>
+where:</br>
+C= criticality number for component having "m" failure modes</br>
+<li> Probability of occurrence for time t<sub>j</sup></br>
+p<sub>i</sub>=1-e<sup>-C<sub>i>/sub></sup></br>
+<li> variable failure rates or failure frequencies,probability of occurence is to be calculated rathre than the criticality which is based on the assumption of a constant failure rate(frequency)</li>
+</ol>
+
+<h4> 5.3.4.1 Criticality matrix</h4>
+
+<ol>
+<li>defined by the analyst  and accepted by the project or programme management</li>
+<li>severity increases by acending order</li>
+where:
+x axis- severity ( roman I to VI)</br>
+y-axis - likelihood - probability of occurance ( 1 to 5) </br>
+ 
+
+* Criticality number 1 or E, Improbable, probability of occurrence: 0 = Pi < 0,001</br>
+
+* Criticality number 2 or D, Remote, probability of occurrence: 0,001 = Pi < 0,01
+</br>
+*Criticality number 3 or C, Occasional, probability of occurrence: 0,01 = Pi < 0,1
+</br>
+*Criticality number 4 or B, Probable, probability of occurrence: 0,1 = Pi < 0,2
+<br>
+*Criticality number 5 or A, Frequent, probability of occurrence: Pi
+= 0,2</br>
+</ol>
+
+<h3> 5.3.5 Risk acceptability assesment</h3>
+<p>defined subjectively or is driven by professional and financial decisions and varies in different industry types</p>
+
+<table border="2">
+<tr>
+<th>Frequency of occurence of failure effect</th>
+<th>|severity levels</th>
+</tr>
+<tr>
+<th></th>
+<th>1</br>insignificant</th>
+<th>2</br>marginal</th>
+<th>3</br>Critical</th>
+<th>4</br> Catastrophic</th>
+</tr>
+<tr>
+<th>5:frequent</th>
+<th>undesirable</th>
+<th>intolerable</th>
+<th>intolerable</th>
+<th>intolerable</th>
+</tr>
+<tr>
+<th>4: probable</th>
+<th>tolerable</th>
+<th>undesirable</th>
+<th>intolerable</th>
+<th>intolerable</th>
+</tr>
+<tr>
+<th>3: Ocassional</th>
+<th>tolerable</th>
+<th>undesirable</th>
+<th>undersirable</th>
+<th>intolerable</th>
+</tr>
+<tr>
+<th>2:remote</th>
+<th>negligible</th>
+<th>tolerable</th>
+<th>undesirabl</th>
+<th>undesirable</th>
+</tr>
+<tr>
+<th>1: improbable</th>
+<th> negligible</th>
+<th> neglibible</th>
+<th>tolerable</th>
+<th>tolerable</th>
+</tr>
+</table>
+
+<h3> 5.3.6 FMECA types with the ranking scales</h3> 
+no uselfull info
+<h4> 5.3.6.1 Alternate severit determination</h4>
+<table border="1">
+<tr>
+<th><b>severity</b></th>
+<th><b>criteria</b></th>
+<th><b>Ranking</b></th>
+</tr>
+<tr>
+<th>None</th>
+<th> no discernible effect</th>
+<th>1</th>
+</tr>
+<tr>
+<th>Very minor</th>
+<th>fit and finish /squeak and rattle item does not conform. defect noticed by discriminating custommer(less than 25%)</th>
+<th>2</th>
+</tr>
+<tr>
+<th>minor</th>
+<th>fit and finish /squeak and rattle item does not confirm.defect noticed by 50% custommers</th>
+<th>3</th>
+</tr>
+<tr>
+<th>very low</th>
+<th>fit and finish /squeak and rattle itemdoes not conform.defect noticed by most custommers(75%)</th>
+<th>4</th>
+</tr>
+<tr>
+<th>low</th>
+<th>vehicle / item operable but comfort/convenience items operableat a reduced level of performance custommer some what dissatisfied</th>
+<th>5</th>
+</tr>
+<tr>
+<th>moderate</th>
+<th>vehicle/item operable but comfort/convenience inoperable.custommer dissatisfied</th>
+<th>6</th>
+</tr>
+<tr>
+<th>High</th>
+<th>vechiles/item  operable but at a reduced level of performance.custommer very dissatisfied</th>
+<th>7</th>
+</tr>
+<tr>
+<th>very high</th>
+<th>vechicle/item inoperable(loss of primary function)</th>
+<th>8</th>
+</tr>
+<tr>
+<th>hazardous with warning</th>
+<th>very high severity ranking when a potential failure mode affects safe vehicle operation and/or involves non-compliancec with government regulations with warning</th>
+<th>9</th>
+</tr>
+<tr>
+<th>Hazardous without warning</th>
+<th>very high severity ranking when a potential failure mode affects safe vehicle operation and or involves non-compliance with government regulation without warning</th>
+<th>10</th>
+</tr>
+</table>
+
+<h4>5.3.6.2 Alternate determination of occurence</h4>
+<table>
+<tr>
+<th>failure mode occurence</th>
+<th>Rating, 'O'</th>
+<th>Frequency</th>
+<th>probability</th>
+</tr>
+<th>remote:</br>failure is unlikely</th>
+<th>1</th>
+<th>&le;per thousand vehicles/items</th>
+<th>&le;1x10<sup>-5</sup></th>
+</tr>
+<tr>
+<th>low: </br>relatively few failures</th>
+<th>2</th>
+<th>0.1 per thousand vehicles/items</th>
+<th>1x10<sup>-4</sup></th>
+</tr>
+<tr>
+<th>low: </br>relatively few failures</th>
+<th>3</th>
+<th>0.5 per thousand vechiles/items</th>
+<th>5x10<sup>-4</sup></th>
+</tr>
+<tr>
+<th>Moderate: </br>occasional failures</th>
+<th>4</th>
+<th>1 per thousand vehicles/items</th>
+<th>1x10<sup>-3</sup></th>
+</tr>
+<tr>
+<th>moderate</th>
+<th>5</th>
+<th>2 per thousand vehicles</th>
+<th>2x10<sup>-3</sup></th>
+</tr>
+<tr>
+<th>moderate</th>
+<th>5 per thousand vehichles/items</th>
+<th>5x10<sup>-3</sup></th>
+</tr>
+<tr>
+<th>high:</br>repeated failures</th>
+<th>7</th>
+<th>10 per thousand vehicles/items</th>
+<th>1x10<sup>-2</sup></th>
+</tr>
+<tr>
+<th>high</th>
+<th>8</th>
+<th>20 per thousand vehicles/items</th>
+
 
 
 
