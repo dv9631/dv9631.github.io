@@ -1,0 +1,375 @@
+<title> analysis for system reliability - procedure for FMEA analysis</title>
+
+<h1>questions</h1>
+<b>what is fmea?</b>
+<b>is the data trustworthy?</b>
+
+<p> a systematic procedure to analyse failure modes of a system their causes and effects on the system</p>
+
+<b>when is the fmea to be done?</b>
+
+<p> preferabilly early in the development cycle so that removal or mitigation is cost effective . can be innitiated as soon as the system is defined enough to be presented as a functional block diagram
+ takes place along with the design process</p>
+
+<b>how to draw a functional block diagram?</b>
+
+<p>refer IEC 61078- analysis for system reliability - reliability block diagram method</p>
+
+<b> what is the properties of the methodology?</b>
+<ul>
+<li> bottom up methodology</li>
+<li>suitabel for idividual failues</li>
+<li>not suitable for dependant failures</li>
+<li>not sutable for failures depending on sequence of events</li>
+</ul>
+<b>what is individual failure?</b>
+[unanswered/ find answer for this]
+<b>what is dependant failure?</b>
+[unanswered/ find answer for this]
+- use 61165 (markov analysis) or 61025 fault tree analysis
+<b>what is a failure depending on sequence of events ?</b>
+[unanswered/ find answer for this]
+<b>what is the objective of the analysis?</b>
+<ul>
+<li>identify failures having unwanted effects on system</li>
+<ul>
+<li>preclude</li>
+<li>user safety</li>
+<li>significantly degrade operation</li>
+</ul>
+<li> requirements satisfacetion</li>
+<li> improve system reliablilty</li>
+<li> maintenance schedule upon the risk </li>
+</ul>
+<hr>
+
+<h1>key terms:</h1>
+<ul>
+<li>ease of detection </li>
+<li>capability to be diagnosed</li>
+<li>testability</li>
+<li>repair</li>
+<li>maintainability</li>
+<li>logistics</li>
+<li>severity</li>
+<li>probabiliy of failure </li>
+<li>operational stresses</li>
+<li>environmental stresses/li>
+<li>system failure criteria</li>
+<hr>
+
+<h1>the standard</h1>
+
+<h2>5.2 preliminary tasks</h2>
+
+<h3>5.2.1 planning for analysis</h3>
+<ol>
+<li> FMEA ACTIVITIES</li>
+<li> follow up activities</li>
+<li>reliabilirt activities</li>
+<li>corrective actions</li>
+<li> plan must have:</li>
+<ol type="a">
+<li>definition of specified purpose</li>
+<li>expected result</li>
+<li>scope of focus on design elements</li>
+<li>design maturity,elements with critical function and risk</li>
+<li>immaturity of technology used</li>
+<li> describe the analysis support on overall projecct dependability</li>
+<li>document control</li>
+<li> project schedule/milestone</li>
+<li>manner of closure of actions identified and mitigation of failure modes</li>
+</ol>
+<hr>
+
+<h3>5.2.2 system structure</h3>
+
+<h4>5.2.2.1 information on system structure</h4>
+<p>provide detailed information on the system :</p>
+<ul>
+<li>system elements with characteristics</li>
+<li>performance</li>
+<li>roles and functions</li>
+<li>logical connection btw elements</li>
+<li>redundancy level</li>
+<li>nature of redundancy level</li>
+<li> importance of the system within whole</li>
+<li>inputs of system</li>
+<li>output of system</li>
+<li> changes in system for various operation modes</li>
+</ul>
+
+<h4>5.2.2.2 defining system boundary for the analysis</h4>
+
+<p> the interactions of the system with its surrounding must be defined, what are the inputs the system recives and <br>
+what are the outputs the system gives must be defined</p>
+<p> if the system has multiple input outputs, functionally complex with multiple interconnections,a study boundayry can be defined</p>
+
+<h4>5.2.2.3 levels of analysis</h4>
+<ul>
+<li>broken down into:</li>
+<ul>
+<li>function</li>
+<li>subsystem</li>
+<li>replaceable unit</li>
+<li>individual components</li>
+</ul>
+</ul>
+<b>guidelines:</b>
+<ol>
+<li>select highest level design concept and specified output requirements</li>
+<li> lowest leve is thse system where information is available for definition and descrition of function</li>
+<li>a mature design with good reliability,maintain ability and safety record can have less mature analysis</li>
+
+<h4>5.2.2.4 representation of system structure</h4>
+<ul>
+<li>diagrams are very usefull</li>
+<li>highlighting esential functions of system</li>
+<li> diagram describe series and redundant relationships</li>
+<li>breakdown of systems</li>
+<li>functional relationships</li>
+<li>approperiately labeled inputs and outputs ,identification numners by which referenced</li>
+<li>alternative signal paths</li>
+<li>fail safe systems</li>
+</ul>
+
+<h4>5.2.2.5 system initiation, operation, control and maintenance</h4>
+<ul>
+<li> different operating conditions of the systems specified</li>
+<li>components in different operating phases</li>
+<li>success and failure criteria for minimum performance to be achieved and maximum damage of harm</li>
+<li>duration of function calls</li>
+<li>time intervsls</li>
+<li>corrctive action time available before serious consequences occur</li>
+<li>environment,interfaces,personnel,interaction with operators</li>
+<li>operating procedures,startupmshut-down and operational transitions </li>
+<li>control during operational phases</li>
+<li>preventive and corrective maintenance</li>
+</ul>
+
+<h4> 5.2.2.6 system environment</h4>
+<ul>
+<li>ambient conditions</li>
+<li>created by other systems in vicinity</li>
+<li>delineated with</li>
+<ul>
+<li>relationships</li>
+<li>dependencies</li>
+<li>interconnections</li>
+<li>auxillary sys</li>
+<li>human interfaces</li>
+</ul>
+</ul>
+
+<h3>5.2.3 failure mode determination</h3>
+<p>critical system function is what determines the succesfull operation of given systems, and identification of these <br>
+critical elements</P>
+<b>make a list of failure modes:</b>
+<ol>
+<li>use of system</li>
+<li>particular system element involved</li>
+<li>mode of operation</li>
+<li>pertinent operation specifications</li>
+<li>time constraints</li>
+<li>environmental stresses</li>
+<li>operational stresses</li>
+<li>failure during operation</li>
+<li> failure to operate at a prescribed time</li>
+<li>failure to cease operation at a prescribed time</li>
+<li>premature operation</li>
+<li>in-service records and failure data may be consulted</li>
+<li>deduced from functional and physical parameters</li>
+<li>determination of remedial design actions</li>
+<li>preventive quality assurance actions</li>
+<li>preventive maintenance actions</li>
+</ol>
+
+
+<p>a given failure mode can have several causes</p>
+
+<h3> 5.2.4 failure causes</h3>
+<p>identify the most likely potential individual causes for each failure</p>
+<ol>
+<li>identification and description of failure causes not always necessary</li>
+<li>id and description of failure causes and mitigation be done according to failure effects and severity</li>
+<li>determine from analysis of field failures</li>
+<li>opinion of experts </li>
+<li>after estimation of the causes of failure modes ,recomended action evaluated based on estimated probability of occurence and severity of effect</li>
+</ol>
+
+<h3> 5.2.5 Failure effects</h3>
+
+<h4>5.2.5.2 failure effects definition</h4>
+<p> consequence of failure mode in operation</p>
+<ul>
+<li>operation/funtion/status:</li>
+<li>must be identified</li>
+<li>evaluated </li>
+<li>recorded</li>
+<li>each level effect anallysis</li>
+
+<h4>5.2.5.2 local failure effects</h4>
+<p> effects on the system element under consideration</p> 
+<p>to provide recomended corrective actions</p>
+
+<h4> 5.3.5.3 failure effects at the system level</h4>
+
+<h4> 5.2.6 detection methods</h4>
+<ul>
+<li>determine how to detect the failure</li>
+<li>means by which user is made aware</li>
+<li>can be a: built-in -test</li>
+<li>checkout procedure</li>
+<li>preclude a hazardous operating condition</li>
+<li>identical manifestations must be identified and listed</li>
+<li>identification of failure redundant elements considered</li>
+<li>how likely,when, where</li>
+<li> by review ,analysis,simulation test</li>
+</ul>
+
+<h3> 5.2.7 failure compensating provisions</h3>
+<p> provisions that have the ability to reduce the effect of failure mode </p>
+<ol>
+<li>redundant  items that allow continued operation if one or more elements fail</li>
+<li>alternative means of operation</li>
+<li>monitoring or alarm devices</li>
+<li>means of permitting effective operation or limiting damage</li>
+</ol>
+
+<h3> 5.2.8 severity classification</h3>
+<p>assesment of significance of failure modes effect on the item</p>
+<ul>
+<li>nature of the system in relation to effect on user and environment resulting on failure</li>
+<li>functional performacne of the system</li>
+<li>contractual requirement imposed by customer</li>
+<li>requirements implied by warranty</li>
+</ol>
+<table>
+<tr>
+<th>class</th>
+<th>severity level</th>
+<th>consequence to person or environment</th>
+</tr>
+<tr>
+<th>IV</th>
+<th>catastrophic</th>
+<th>
+<ul>
+<li>failure of primary function</li>
+<li>serious damage to the system</li>
+<li>personal injury</li>
+</ul>
+<th>
+</tr>
+<tr>
+<th>III</th>
+<th>critical</th>
+<th>
+<ul>
+<li>faulure of primary functions</li>
+<li>not a serious threat to lide or injury</li>
+</ul>
+</th>
+</tr>
+<tr>
+<th>II</th>
+<th>marginal</th>
+<th>potentially degrade system performance</th>
+</tr>
+<tr>
+<th>I</th>
+<th>insignificant</th>
+<th>no damage to system or threat to life or injury</th>
+</tr>
+</table>
+<h3>5.2.9 frequency or probability of occurence</h3>
+
+</br><b>why?</b>
+<p> to adequately asses the effect of criticality of the failure  mode</p>
+<b>how?</b>
+<ol>
+<li>published information</li>
+<li>operational profile(environmental,mechanical,electrical stresses applied)</li>
+<li> data from component life testing</li>
+<li>available databases of failure rates</li>
+<li>field failure data</li>
+<li>dailure data for similar items of for the component class</li>
+</ol>
+
+<h3> 5.2.10 analysis procedure</h3>
+<ol>
+<li> initiate a FMEA or FMECA</li>
+<li>select component for analysis</li>
+<li>identify failure modes of the component</li>
+<li>select the failure mode to analyse</li>
+<li>identify immediate efefect and final effect</li>
+<li>determine initial effect and final effect</li>
+<li>determine severity of final effect</li>
+<li>identify potential causes for the failure mode</li>
+<li>estimate frequency or probability of occurence</li>
+<li> if need for action , provide mitigation, coorrective action, compensating provision</li>
+<li>complete the document</li>
+</ol>
+
+<h2>5.3 Failure mode, effects, and criticality analysis (FMECA)</h2>
+
+<h3> 5.3.1 purpose of analysis</h3>
+<ol>
+<li>qualitative measures of magnitude of failure mode effect</li>
+<li>impact or importance of a failure mode</li>
+<li>quantify the relative magnitude of each failure rate</li>
+<li>aid to decision making</li>
+<li>combination of criticality and severity,priority for action to mitigate or minimize effect of certain failures</li>
+</ol>
+
+<h3> 5.3.2 risk, R and risk priority number</h3>
+<ol>
+<li>subjective measure of the severity  of the effect  and an estimate of the expected probability of its occurance for a predetermined time period assumed for analysis</li>
+<li> RPN=SxP | where : S= severity, an estimate oh how strongly the effects of the failure will affect the system or user</br>|p = probability of occurence, lkelihood that the failure effect will occur</li>
+<li> RPN= SxOxD | where:  S= severity as described above | O: probability of occurence |D: detectability, identify and eliminate the failure before  the system or customer is affected</li>
+<li> RPN used to prioritise in addressing the mitigation of failure modes</li>
+<li>if similar or identical rpn, high severity numbers are addressed first</li>
+<li>high priority is assigned to high rpn</li>
+<li>rpn exceeding a defined threshold are not acceptable</li>
+<li>high importance is given to the high severity numbers</li>
+</ol>
+
+<h3> 5.3.3 Relationship between FMECA and risk analysis</h3>
+<ul>
+<li>FMECA usually results in a relative ranking of the contribution to the overall risk</li>
+<li>risk analysis for high risk systems generally aims at risk acceptability</li>
+<li>high risk effects is recognised it is adviced that a probabilistic risk analysis(PRA) should be used in preference to FMECA</li>
+<li>probabilistic risk analysis, where also more influential parameters (and their interactions) can be taken into account , eg:exposure time,probability of avoidancej,latency failures , fault detecttion mechanisms</li>
+</ul>
+
+<h3>5.3.4 failure mode,failure rate,probability,and criticality number determination</h3>
+<ol>
+<li> &lambda;<sub>i</sub>=&lambda;<sub>j</sub>x&alpha;<sub>i</sub>&beta;<sub>i</sub></li></br>
+where: </br>
+ &lambda;<sub>i</sub> = failure rate for failure mode i assumed constant</br>
+&lambda;<sub>j</sub> = failure rate of the component j</br>
+&alpha;<sub>i</sub> = probability that the item will have failure</br>
+&beta;<sub>i</sub> = condidtional probability  of the failure given</br>
+
+
+
+<h1>note:</h1>
+
+ <ol>
+<li> when criticallity and probability are addressed they reffeer to FMECA</li>
+<li> write a procedure from this which people can use </li>
+</ol>
+<h1> use cases</h1>
+<ol>
+<li>financial planning</li>
+<li>decision failure effects analysis</li>
+</ol>
+<h1> prerequsites</h1>
+<ol>
+<li>conditional probability</li>
+<li>probability</li>
+</ol>
+
+
+
+
