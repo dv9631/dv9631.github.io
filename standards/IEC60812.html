@@ -442,7 +442,7 @@ y-axis - likelihood - probability of occurance ( 1 to 5) </br>
 
 <h3> 5.3.6 FMECA types with the ranking scales</h3> 
 no uselfull info
-<h4> 5.3.6.1 Alternate severit determination</h4>
+<h4> 5.3.6.1 Alternate severity determination</h4>
 <table border="1">
 <tr>
 <th><b>severity</b></th>
@@ -502,7 +502,7 @@ no uselfull info
 </table>
 
 <h4>5.3.6.2 Alternate determination of occurence</h4>
-<table>
+<table border="1">
 <tr>
 <th>failure mode occurence</th>
 <th>Rating, 'O'</th>
@@ -540,6 +540,7 @@ no uselfull info
 </tr>
 <tr>
 <th>moderate</th>
+<th>5</th>
 <th>5 per thousand vehichles/items</th>
 <th>5x10<sup>-3</sup></th>
 </tr>
@@ -553,8 +554,96 @@ no uselfull info
 <th>high</th>
 <th>8</th>
 <th>20 per thousand vehicles/items</th>
+<th>2x10<sup>-2</sup></th>
+</tr>
+<tr>
+<th>Very high:</th>
+<th>9</th>
+<th>50 per thousand vehicles items</th>
+<th>5X10<sup>-2</sup></th>
+</tr>
+<th>Very high:</th>
+<th>10</th>
+<th>&ge;100 in thousand vehicles/items</th>
+<th>&ge;1X10<sup>-1</sup></th>
+</tr>
+</table>
 
+<h4> 5.3.6.3 Rating of failure detection probability</h4>
+<p> position to detect and isolate a failure before it gets transferred to the subsequent processes ot to the ultimate product output</p>
+<table border="1">
+<tr>
+<th>Detection</th>
+<th>criteria: Likelihood of derection by design control</th>
+<th>ranking</th>
+</tr>
+<tr>
+<th>almost certain</th>
+<th>design control will almost certainly detect a potential cause/mechanism and subsequent failure mode</th>
+<th>1</th>
+</tr>
+<tr>
+<th>very high</th>
+<th>very high chance the design control will detect a potential cause/mechanism and subsequent failure mode</th>
+<th>2</th>
+</tr>
+<tr>
+<th>high</th>
+<th>high chance in design control will detect a potential cause/mechanism and subsequent failure mode</th>
+<th>3</th>
+</tr>
+<tr>
+<th>moderately high</th>
+<th>moderately high chance in the design control will detect a potential cause/mechanism and subsequent failure mode</th>
+<th>4</th>
+</tr>
+<tr>
+<th>moderate</th>
+<th>moderate chance the design control will detect a potential cause or mechanism and subsequent  failure modes</th>
+<th>5</th>
+</tr>
+<tr>
+<th>low</th>
+<th>low chance the design control will detect a potential cause/mechanism and subsequent failure mode</th>
+<th>6</th>
+</tr>
+<tr>
+<th>very low </th>
+<th>very low chance the design control will detect a potential cause/mechanism and subsequent failure mode</th>
+<th>7</th>
+</tr>
+<tr>
+<th>remote</th>
+<th>remote chance that the design control will detect a potential cause/mechanism and subsequent failure mode</th>
+<th>8</th>
+</tr>
+<tr>
+<th>very remote</th>
+<th>very remote chance that the design control will detect a potential cause/mechanism and subsequent failure mode</th>
+<th>9</th>
+</tr>
+<tr>
+<th>absolutely uncertain</th>
+<th>design control will not and/or cannot detect a potential cause/mechanism and subsequent failue mode; or there is no design control</th>
+<th>10</th>
+</tr>
+</table>
 
+<h4> 5.3.6.4 Risk evaluation</h3>
+<p>a decision must be guided by the magnitude of severity rather than RPN alone, a good practice is to view severity rank of a failure mode along with the RPN fora better decision making process</p>
+
+<h2> 5.4 Report of the analysis</h2>
+<h3> 5.4.1 scope and content of a report</h3>
+<p> include a sumary and a detailed record of the analysis and the block or functional diagrams which define the system structure</p>
+<h3> 5,4,2 Failure efffects summart</h3>
+<p> a listing of the failure effedts ona specific system</p>
+<p> required in order to determine the probability od failure of the dydtem resultant from the listed failure effects anf to establish priorities for remedial or preventive actions</p>
+<p> a briefe description of the method of analysis and the level to which it was conducted.</p>
+<ul>
+<li>failure modes, that result in serious effects<li>
+<li>recomendations for the attention of designers, maintanance staff planners and users</li>
+<li>design changes which have already been incorporated as a result of the FMEA</li>
+<li>effects that are mitigated by the incorporated design changes</li>
 
 
 <h1>note:</h1>
