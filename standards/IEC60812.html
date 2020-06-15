@@ -644,6 +644,127 @@ no uselfull info
 <li>recomendations for the attention of designers, maintanance staff planners and users</li>
 <li>design changes which have already been incorporated as a result of the FMEA</li>
 <li>effects that are mitigated by the incorporated design changes</li>
+</ul>
+
+<h1>other considerations</h1>
+<h2>common-cause failures</h2>
+<p> in a reliability analysis,it is not sufficient to consider only random and independaent failure.
+some common cause failures(CCF)can occur, that causes system performance degradation or failure through simultaneous deficiency in several system components.
+</p>
+<p> the ccf will cause more than one item to fail simultaneously.</p>
+<ul>
+<li>design: software,rating</li>
+<li>manufacturing: batch related component flaws</li>
+<li>environmental: electrical interferencing, temperature cycling,vibrations;</li>
+<li>human factors: incorrect operating or maintenance actions;</li>
+</ul>
+<p>a ccf is that result of an event that, because of logical dependancies, causes a coincidence of failure states in 
+two or more components(excluding secondary failures caused by the effects of a primary failues).
+</p>
+a combination of several methods:
+<ul>
+<li>system modeling</li>
+<li>physical analysis of components</li>
+<li>functional diversity:redundant branches or parts of the system performing the same function are not identical and have different failure modes</li>
+<li>physical seperation to eliminate influence of environmental or EMI stress causing CCF</li>
+</ul>
+
+<h2> 6.2 Human factors</h2>
+some systems havvve to be designes to prevent or mitigate some human errors.to checck the effeectiveness of the provisions.
+<h2>6.3 software errors</h2>
+<p> may have repercussions on the software in the system</p>
+<p>interrelationships between hardware and software need to be clearly identified because any subsequent alteration or improvement of the software may modify the FMEA and the assessments derived from it.</p>
+software logic may be altered to improve safety at the expense of operational reliability</p>
+
+<h2>6.4 fmea regarding consequences of a system failure</h2>
+<p>project specific FMEA and to have regard to the particular conseqences of system failure. it might be necessary to categorise the effects of the failures on the system according to the consequences of these failures,for example,faile safe repairable failure,
+non-repairable failure,mission degraded,mission failed,effects on individuals  groups or societey generally.</p>
+other forms of analysis , such as fault trees, markov graphs,petri nets,etc.</p>
+
+<h1>7 applications</h1>
+<h2 7.1 use of FMEA/FMECA</h2>
+<p>study of material and equipment failures and that can be applied to catogories of systems based on differnt technologies(electrical,mechanical,hydraulic,etc.)and combinations on different technologies or it may be specific to 
+particular piece of equipment, to systems or to projects as a whole</p>
+<p> consideration of softeare and human performance are relevant to the dependability of the system</p>
+<h3> 7.1.1. application within a project</h3>
+<ul>
+<li> need to understand hardware behaviour and its implications for the operation of the system or equipment</li>
+<li>FMEA supports the design review concept put into use as early as possible in the period of system and subsystem design.</li>
+<li>most approperiate for lower levels where large numbers of items are involved and or ther is functional complecity</li>
+<li>collaboration of systems engineers and designers.</li>
+<li>should be updated as the project progress as designs are modified</li>
+<li>at the end of the project the FMEA is used to check the design and may be essential for demonstration of conformity of a designed system to the required stnadards,regulations and user requirements</li>
+<li>priorities for statistical process control,sampling and inspection tests during manufacture and installation and for qualification,approval,aceptance and startup tests, essential information for diagnostic and maintenance procedures for inclusion in handbook</li>
+<li>the time phasing with other activities and the imporatance of establishing a pre determined degree of awareness and control over unwanted failure modes</li>
+</ul>
+ 
+<h3>7.1.2 application with a process</h3>
+<ul>
+<li>a clear definition of the proces goal</li>
+<li>individlual steps in the process</li>
+<li>potential flaws in each process step</li>
+<li>effect of each individual flaw</li>
+<li>causes of each individual flaw</li>
+<li>potential unfavourable outcomes</li>
+</ul>
+
+<h2> 7.2 benefits of FMEA</h2>
+<ol>
+<li>avoid costly modifications by the early identification of design deficiencies</li>
+<li>identify failures which when they occur alone or in combination </li>
+<li>to determine the need for the design methods for reliability improvement( redundancy,operational stresses,fail safe,component selection adn de-rating,etc.);</li>
+<li>logic model required to evaluate the probability or rate of occurence of anamolous operating conditions of the system in preperation for the criticality analysis</li>
+<li>disclose safety and product liability problem areas, or non compliance with regulatory requirements</li>
+<li>ensure that the development test programme can detect potential failure modes</li>
+<li>focus upon key areas in which to concentrate quality control,inspection and manufacturing proceess controls</li>
+<li>assisr in defin;ing various aspectsof the feneral preventive maintenance strategyand schedule</li>
+<li>facilitate or support the determination of test criteria, test planning and diagnostic procedures for example:performance testing,reliability testing;</li>
+<li>support the design fault isolationsequences and to support the planning for alternative modes of operation and reconfiguration</li>
+<li>designers with an understanding of the factors which indluence the reliability of the system;</li>
+<li>final document that is proof of the fact that(and od the extent to which) care has been taken to ensure that the design will meet its specification in service</li>
+</ol>
+
+<h2>7.3 limitations and deficiencies of FMEA</h2>
+<ol>
+<li>efficient when applied with analysis of elements that cause failure of the entire system or of a major function of the system.</li>
+<li>FMEA may be difficult and tedious for the complex systems that have multiple functions</li>
+<li>difficulties may be increased by the eistence of a number of possible operating modes</li>
+<li>relationshi[ps between individual or groups of failure modes or causes of failure modes cannot be effectively presented in FMEA</li>
+<li>deficiency becomes even more pronounced in view of software/hardware interactions, where independency assumption does not apply</li>
+<li>when adding the human interactions with hardware and the modeling their interdependancy</li>
+<li>interrelationship scenarios are far better modelled using the approach of failure mode analysis with the FTA tool (IEC 60300-3-1, edition 2).</li>
+<li>restricted to relating teo levels only in the hierarchical structure.for example,it is relatively straightforward task to identify failre modes of items and to determine their effects on the assembly.</li>
+<li>however succesful multilevel FMEA are often carried out</li>
+<h2>7.4 relationship with other methods</h2>
+<p>methods: deductive FTA</p>
+<ul>
+<li>it is often difficult to identify whether the inductice or deductive aproach</li>
+<li>where levels of risk are identified in industrial facilities and systems, the deductive approach is preffered</li>
+<li>dulring the early design stages ,where only functions, general system structure and subsystems have been defined ,succesfull performance of the system can be depicted bya reliability block diagram or by a faukyre path by a fault tree</li>
+<li>fta traces the low level causes of a postulated high level failure</li>
+<li>deficiencies of an FMEA is its inability to view interaction and dynamics of failure mode occurences in a system</li>
+<li>logic of coincidence and alternative events causing undesirable consequences</li>
+<li>if the system is based mainly on series logic, with new redundancies and few functions, then FTA is an unnecessary complicated way</li>
+</ul>
+<ol>
+<li>FMEA is appropriate when comprehensive knowledge of the failure characteristics of an
+item is required.</li>
+<li>FMEA is more appropriate for smaller systems, modules or assemblies.</li>
+<li>FMEA is an essential tool at the research and development or design stage when
+unacceptable effects of failures need to be identified and solutions found.</li>
+<li>FMEA can be necessary for items that are of innovatory design and their failure
+characteristics cannot be known from previous operational experience.</li>
+<li>FMEA is usually more applicable to systems having large numbers of components to be
+considered that are related by predominantly series failure logic.</li>
+<li>FTA is generally more suitable for the analysis of multiple failure modes and dependency
+involving complex failure logic and redundancy. FTA can be used at the higher levels in
+the system structure early in the design stage and can help in identifying the need for
+detailed FMEA at lower levels during detailed design.</li>
+</ol>
+
+
+
+
 
 
 <h1>note:</h1>
