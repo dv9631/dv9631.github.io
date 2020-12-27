@@ -11,11 +11,13 @@ what the clauses say:
 <ul>
 <li>there must be a QMS system in compliace with ISO 13485</li>
 <li>there must be a Risk managment system in compliance with ISO 14971</li>
-<li>software must be classifies into risk class A/B/Clause</li>
-
+<li>software must be classifies into risk class A/B/C</li>
+<ul><li> CLASS A: no injury or damage to health is possible</li>
+<li> CLASS B: non-serious injury is possible</li>
+<li> CLASS C: death or serious injury is possible</li></ul>
 </ul>
 
-<h2>Clause 5:</h2>
+<h2>Clause 5: Software Development process</h2>
 <ol>
 <li>planning to conduct activities aproperiate to software development process scope and magnitude and software safety classification</li>
 <ul>
@@ -73,7 +75,7 @@ what the clauses say:
 <ul>
 <li>manual operations</li>
 <li>human equipment interaction</li>
-<li>constrain on perfornel</li>
+<li>constrain on personel</li>
 <li> areas with concentrated attention</li>
 </ul>
 <li>data definition and databse requirments</li>
@@ -99,10 +101,276 @@ what the clauses say:
 <li>functional and performance requirment for SOUP identified as software item</li>
 <li>hardware and software necessary for soup operation specified</li>
 <li>segrigate items necessary for risk control</li>
+<li>verify software architecture</li>
+<ul><li>able to support interfaces between software item and hardware</li></ul>
+</ul>
+<li>software detailed design</li>
+<ul>
+<li>refine software architecture into software units</li>
+<li>develop detailed design for each software unit</li>
+<li>develop detailed design for interfaces</li>
+<li>verify detailed design</li>
+</ul>
+<li>Software unit implementation and verification</li>
+<ul>
+<li>implement each software unit</li>
+<li>establish software unit verification process(strategies,methods and procedures,testing evaluated for correctness</li>
+<li>software unit acceptance</li>
+<ul>
+<li>acceptance criteria</li>
+<li>software free from contradiction with interfaces documented in detailed design</li>
+</ul>
+<li>additional software unit acceptance criteria</li>
+<ul>
+<li>proper event sequence</li>
+<li>data and control flow</li>
+<li>planned resource allocation</li>
+<li>fault handling(error definition,isolation,and recovery)</li>
+<li>initialisation of variables</li>
+<li>self-diagnostics</li>
+<li>memory management and menory overflows</li>
+<li>boundary conditions</li>
+</ul>
+<li>software unit verification</li>
+</ul>
+<li>software integration and integration testing</li>
+<ul>
+<li>integrate software units according to integration plan</li>
+<li>verify software integration</li>
+<ul>
+<li>software units have been integrated into software items</li>
+<li>hardware items,software items and support for manual operations have been integrated into the system</li>
+<li>human equipment interface</li>
+<li>on-line help menus</li>
+<li>speech recognition</li>
+<li>voice control</li>
+
+</ul>
+<li>test integration software against integration plan</li>
+<li>integration testing content</li>
+<ul>
+<li>requied functionality of the software</li>
+<li>risk control measures implementation</li>
+<li>specified timing and behaviour</li>
+<li>specified functioning of internal and external interfaces</li>
+<li>testing under abnormal conditions including forseable misuse</li>
+<li> note: combine integration testing and software system testing into single plan</li>
+</ul>
+<li>verify integration test procedure</li>
+<li>conduct regression testing-demonstrate defects are not introduced into previous integrated software</li>
+<li>integration test record and contents</li>
+<ul><li>document test result(pass/fail and list anomalies)</li>
+<li>retain records to repeat tests</li>
+<li>identify tester</li>
+</ul>
+<li>use software problem resolution process</li>
+
+</ul>
+</ul>
+<li>software system testing</li>
+<ul>
+<li>establish test for software requirements</li>
+<ul>
+<li>input stimuli,expected outcomes,pass/fail criteria and procedures for conducting software system testing.</li>
+</ul>
+<li>use software resolution process</li>
+<li>retest after changes</li>
+<ul><li> repeat test/perform modified tests or perform additional test.as approperiate,to verify the effectiveness of the change in correcting the problem</li>
+<li>conduct testing to demonstrate unintended side effects have not been introduced</li>
+<li>perform relevant risk mangment activities</li>
+</ul>
+<li>verify software system testing</li>
+<li>software system test record contents</li>
+
+</ul>
+<li>software release</li>
+<ul>
+<li>ensure software verification is complete</li>
+<li>document known residual anomalies</li>
+<li>evaluate known residual anomalies</li>
+<li>document release versions</li>
+<li>document how released software was created</li>
+<li>ensure activities and tasks are completed</li>
+<li>archive software</li>
+<li> assure repeatability of software release</li>
+<ul><li>reliabily delivered for point of use without corruption or unauthorised change.production and handling of media</li>
+<li>replication</li>
+<li>media labeling</li>
+<li>packaging</li>
+<li>protection</li>
+<li>storage and delivery</li>
+</ul>
 </ul>
 </ol>
 
 
-Clause 6:
-Clause 7: 
-Clause 8:
+<h2>Clause 6: Software maintenance process</h2>
+<ol>
+<li>establish software maintenance plan</li>
+<ul>
+<li>activities and tasks for software maintenance plan</li>
+<li>procedures for:</li>
+<ul>
+<li>recieving,documenting,evaluating resolving and tracking of feedback after release of medical device software</li>
+<li>criteria for determining feedback is not a problem</li>
+<li>use of software risk managment process</li>
+<li>software problem resolution process to analyse and resolve problems after release</li>
+<li>use of software configuration management process for managing modifications to existing system</li>
+<li>evaluate and implement upgrades,bugfixes,patches and obsolescence</li>
+</ul>
+</ul>
+<li>problems and modification analysis</li>
+<ul><li>document and evaluate feedback</li>
+<li>monitor feedback</li>
+<li>document and evaluate feedback-problem report</li>
+<li>evaluate problem reports affects in safety</li>
+<li>use of software resolution process</li>
+<li>analyse change request for effect on organisation,released software products.and systems with which it interferes</li>
+<li>approve change request which modify released software products</li>
+<li>communicate to users and regulators</li>
+<ul><li>problems in released software products and consequences of continued use</li>
+<li>nature of available changes to released software products and how to obtain and install</li>
+</ul>
+</ul>
+<li>modification implementation</li>
+<ul>
+<li>use established process to implement modification</li>
+<li>re release modified software as a full release or a modification kit with changed software</li>
+</ul>
+</ol>
+<h2>Clause 7: 
+software risk management process</h2>
+<ol>
+<li>analysis of software contributing to hazardous situvation</li>
+<ul><li>identify software units that could contribute to a hazardous situvation</li>
+<li>identify potential causes of contribution to a hazardous situation</li>
+<ul>
+<li>incorrect or incomplete specfication of funtionality</li>
+<li>software defects</li>
+<li>failure or unexpected results from SOUP</li>
+<li>hardware failures and other software  defects that could result in unpredectable software ooperation</li>
+<li>reasonabily forseable misuse</li>
+</ul>
+<li>evaluate published SOUP anomaly list</li>
+<li>document potential causes</li>
+<li>document sequence of events</li>
+</ul>
+<li>risk control measure</li>
+<ul>
+<li>define risk control measure</li>
+<li>risk control measures implemented in software</li>
+
+</ul>
+<li>verification of risk control measure</li>
+<ul>
+<li>verify risk control measure</li>
+<li>document new sequence of events</li>
+<li>document traceability</li>
+<ul>
+<li>from the hazardous situation to software item</li>
+<li>software item to specific software cause</li>
+<li>software cause to the risk control measure</li>
+<li>from risk control measure to verification of risk control measure</li>
+
+</ul>
+</ul>
+<li>risk management of software changes</li>
+<ul>
+<li> analyse changes to medical device software with respect to safety</li>
+<ul>
+<li>additional potential causes are introduced</li>
+<li>additional software risk control measures are required</li>
+</ul>
+<li>analyse impact of software changes on existing risk control measures</li>
+<li>perform risk managment activities based on analyses</li>
+</ul>
+</ol>
+
+<h2>Clause 8:
+software configuration management process</h2>
+<ol>
+<li>configuration identification</li>
+<ul>
+<li>establish means to identify configurations</li>
+<li>identify soup</li>
+<li>idntify system configuration documentation</li>
+</ul>
+<li>change control</li>
+<ul>
+<li>approve change request</li>
+<li>implement changes</li>
+<li>verify changes</li>
+<li>provide means for traceability of change</li>
+<ul><li>change request</li>
+<li>relevant problem report</li>
+<li>approval of the change request</li>
+</ul>
+<li>configuration status accounting</li>
+</ul>
+</ol>
+<h2>Clause 9: software problem resolution process</h2>
+<ol>
+<li>prepare problem reports</li>
+<ul>
+<li>type 1: corrective, preventive or adaptive to new environment</li>
+<li>size of change number of device models affected supported accessories affected resources involved time to change</li>
+<li>Criticality:effect of performance on safety and security</li>
+</ul><li>investigate the problem</li>
+<ul>
+<li>identify cause</li>
+<li>evaluate relevance to safety</li>
+<li>create change request to correct the problem or document the rationale for taking no action</li>
+</ul>
+<li>Advise relevant parties</li>
+<li>use chang control process</li>
+<li>maintain records</li>
+<li>analyse problems for trends</li>
+<li>verify software problem resolution</li>
+<ul>
+<li>problem resolved and probblem report has been closed</li>
+<li>adverse trends have been reversed</li>
+<li>chagne request has been implemented</li>
+<li>additional problems have been introduced</li>
+</ul>
+</ul>
+<li>test documentation contents</li>
+<li>
+</ol>
+<hr>
+<h1>Annex A </br>Rationale for requirments of this standard</h1>
+processes to be followed in development and maintenance of medical device software
+testing of software is not sufficient to determine tat it is safe in operation
+<ol>
+<li>processes required to determine RISK arising from operation of each software item</li>
+<li>processes required to achieve an approperiatley low probability of software failure for each software item</li>
+</ol>
+
+must bes: 
+<ul>
+<li>documented risk analysis</li>
+</ul>
+
+activities applicable for A,B and C:
+<ul>
+<li>plan relevant to risk managment or software safety classification</li>
+<li>output that is an inpur to risk managment or software safety classification</li>
+<li>part of risk manamgnet or software safety classification</li>
+<li>establish administrative system for documentation, recordkeeping,supports risk management or SSC</li>
+<li>takes place when classificarion of software is unknown</li>
+<li>cause a change that could invalidate the current software safety classification </li>
+</ul>
+aactivities for class B and C:
+<ul>
+<li> enhances reliability of software by requiring more detail, rigor in design,testing or verification</li>
+<li>sdministrative activity that supports another activity</li>
+<li>ccorrection of safety related problems</li>
+<li>produces records of design, implementation, verification and release of safety related software</li>
+</ul>
+activities for class c:
+<ul>
+<li>further enhances the reliability of software by requiring more detail,or more rigour or attention to specific issues in design,testing or other verification</li>
+</ul>
+
+<h3>refer standard for a table which maps standard clause id to the software safety classification</h3>
+
+</ul>
